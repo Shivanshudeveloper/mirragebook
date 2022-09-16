@@ -53,8 +53,8 @@ const Home = () => {
                         <div className="col-lg-12">
                             <nav className="navbar navbar-expand-lg">
                                 <a className="navbar-brand" style={{color:'red'}} href="#">
-                                    {/* <!-- <img src="assets/images/logo.png" alt="Logo"> --> */}
-                                    COMPANY LOGO
+                                    <img src="assets/images/logo-2.png" alt="Logo"/>
+                                    {/* COMPANY LOGO */}
                                 </a>
                                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span className="toggler-icon"></span>
@@ -94,15 +94,12 @@ const Home = () => {
                 </div> 
             </div> 
 
-            <div className="header-banner d-flex align-items-center">
-                <div className="container">
+            <div className="header-banner d-flex align-items-center my-5">
+                {/* <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-xl-10 col-lg-9 col-sm-10">
                             <div className="banner-content">
-                                {/* <!-- <h4 className="sub-title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">Your trusted</h4>
-                                <h1 className="banner-title mt-10 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="2s"><span>Interior</span> Design Partner for Home or Office</h1>
-                                <a className="banner-contact mt-25 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="2.3s" href="#contact">Get a Free Quote</a> --> */}
-                                <h1 className='mt-4'>Trusted Matrimony and Matching Service</h1>
+                                <h1 className='text-center'>Done With Dating ? <br/> Find Your Forever Person</h1>
                                 <div className="my-5">
                                     <form className="d-flex justify-content-around align-items-center" >
                                         <div className="d-flex flex-column">
@@ -145,7 +142,7 @@ const Home = () => {
                                             </select>
                                         </div>
                                         <div className="d-flex flex-column">
-                                            <button className="btn btn-info mt-4">
+                                            <button className="btn btn-danger mt-4" style={{width:'160px', height:'40px'}}>
                                                 Let's begin
                                             </button>
                                         </div>
@@ -155,7 +152,78 @@ const Home = () => {
                             </div> 
                         </div>
                     </div>
-                </div> 
+                </div>  */}
+
+                <div className="d-flex flex-column py-20 container foreground min-vh-100">
+                    <div className="row align-items-center justify-content-center justify-content-lg-between my-auto">
+                        <div className="col-md-10 col-lg-6 col-xl-5 inverted mb-5 mb-lg-0 text-center text-lg-start">
+                            <h1 className="lh-sm mb-4">Done With Dating ? <br/>Find Your Forever Person</h1>
+                            <p className="lead text-secondary mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
+                                </p>
+                            {/* <a href="" className="btn btn-green btn-with-icon rounded-pill btn-lg">Get Started <i className="bi bi-arrow-right"></i></a> */}
+                        </div>
+                        <div className="col-md-10 col-lg-6 col-xl-5">
+                            <div className="card bg-opaque-black">
+                                <div className="card-body bg-white">
+                                <form action="#" className="row g-2">
+                                    <div className="col-lg-12 mb-3">
+                                        <div className="form-floating">
+                                            <input 
+                                            type="text" 
+                                            className="form-control" 
+                                            id="floatingInput-1" 
+                                            placeholder="Your Name"
+                                            // value={name} 
+                                            // onChange={(e) => setName(e.target.value)}
+                                        />
+                                            <label htmlFor="floatingInput-1" className='pl-2'>Full Name</label>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-12 mb-3">
+                                        <div className="">
+                                            <select className='custom-select' 
+                                                // value={type} 
+                                                // onChange={(e) => setType(e.target.value)}
+                                            >
+                                                <option>Select gender</option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-12 mb-3">
+                                    <div className="form-floating">
+                                        <input type="email" className="form-control" id="floatingInput-2" placeholder="Your Email"
+                                            // value={email} 
+                                            // onChange={(e) => setEmail(e.target.value)}
+                                            />
+                                        <label htmlFor="floatingInput-2" className='pl-2'>Email Address</label>
+                                    </div>
+                                    </div>
+                                    <div className="col-lg-12 mb-3">
+                                    <div className="form-floating">
+                                        <input type="password" className="form-control" id="floatingInput-3" placeholder="name@example.com"
+                                            // value={password} 
+                                            // onChange={(e) => setPassword(e.target.value)}
+                                            />
+                                        <label htmlFor="floatingInput-3" className='pl-2'>Password</label>
+                                    </div>
+                                    </div>
+                                    
+                                    <div className="col-lg-12 mb-3">
+                                    <a href="" className="btn btn-info btn-lg" 
+                                        // onClick={handleSubmit}
+                                    >
+                                        Register Now
+                                    </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
                 {/* <!-- <div className="banner-image bg_cover" style="background-image: url(assets/images/banner/banner-image.png)"></div> --> */}
             </div>
 
@@ -180,7 +248,7 @@ const Home = () => {
                     <div className="col-lg-6">
                         <div className="about-content mt-45">
                             <h4 className="about-welcome">About Us </h4>
-                            <h3 className="about-title mt-10">Reasons to choose</h3>
+                            <h3 className="about-title mt-10">Why Marriagebook ?</h3>
                             <p className="mt-25">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
                                 <br/> <br/>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                             </p>
@@ -575,7 +643,7 @@ const Home = () => {
                         <div className="col-lg-3 col-md-4 col-sm-8">
                             <div className="footer-logo mt-50">
                                 <a href="#">
-                                    <img src="assets/images/logo.png" alt="Logo"/>
+                                    <img src="assets/images/logo-2.png" alt="Logo"/>
                                 </a>
                                 <ul className="footer-info">
                                     <li>
