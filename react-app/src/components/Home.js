@@ -5,30 +5,6 @@ const Home = () => {
 
   return (
     <>
-        {/* <!--====== PRELOADER PART START ======--> */}
-
-        {/* <div className="preloader"
-            style={{display: `${ready ? "none" : "box"}`}}
-        >
-            <div className="loader_34">
-                <div className="ytp-spinner">
-                    <div className="ytp-spinner-container">
-                        <div className="ytp-spinner-rotator">
-                            <div className="ytp-spinner-left">
-                                <div className="ytp-spinner-circle"></div>
-                            </div>
-                            <div className="ytp-spinner-right">
-                                <div className="ytp-spinner-circle"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> */}
-
-        {/* <!--====== PRELOADER ENDS START ======--> */}
-
-        {/* <!--====== HEADER PART START ======--> */}
         <header id="home" className="header-area pt-100 py-5">
 
             <div className="shape header-shape-one">
