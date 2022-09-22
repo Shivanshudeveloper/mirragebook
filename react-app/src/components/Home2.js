@@ -18,7 +18,7 @@ const Home2 = () => {
                     <ul className='p-2 m-2'>
                         <li className='p-2 m-2'>
                             <a style={{color:"white", fontSize:"30px"}} href='/'>
-                                Marriagebook
+                                <img src='/assets/images/logo-2.png' alt='Marriagebook' />
                             </a>
                         </li>
                     </ul>
