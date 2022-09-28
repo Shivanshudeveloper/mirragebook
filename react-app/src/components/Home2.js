@@ -17,7 +17,7 @@ const Home2 = () => {
     }
     return (
     <>
-        <section style={{backgroundImage:"url('/assets/images/bg-img-1.jpg')", color:'white', paddingBottom:'140px'}}>
+        <section style={{backgroundImage:"url('/assets/images/pexels-j-carter-254069.jpg')", color:'white', paddingBottom:'140px'}}>
             {/* <div className='image-container'>
                 <img src='/assets/images/bg-img-1.jpg'/>
             </div>
@@ -30,7 +30,8 @@ const Home2 = () => {
                         <li className='p-1'>
                             <a style={{color:"white", fontSize:"30px",fontWeight:'400'}} href='/'>
                               
-                                 <img src='https://images.ctfassets.net/czwjnyf8a9ri/6vbYI3pLTa19TKvECeYUmd/bba9ee9e94e5de7d45317946c6bd5c82/logo-eharmony.png?w=60' alt='Marriagebook' /> 
+                                 {/* <img src='https://images.ctfassets.net/czwjnyf8a9ri/6vbYI3pLTa19TKvECeYUmd/bba9ee9e94e5de7d45317946c6bd5c82/logo-eharmony.png?w=60' alt='Marriagebook' />  */}
+                                 <section style={{backgroundImage:"url('/assets/images/logo-2.png')", color:'white', paddingBottom:'140px', backgroundRepeat:'no-repeat'}}></section>
                             marriagebook
                             </a>
                         </li>
@@ -122,6 +123,7 @@ const Home2 = () => {
                 <div style={{backgroundColor:"#1a5f78", flex:'0.3333', display:'flex',flexDirection:'column', alignItems:'center', justifyContent:'space-around'}} className='pb-3'>
                     <div style={{width:'70px', height:'70px',marginTop:'20px'}}>
                      <img style={{width:'100%',height:'100%'}} src='https://images.ctfassets.net/czwjnyf8a9ri/6vbYI3pLTa19TKvECeYUmd/bba9ee9e94e5de7d45317946c6bd5c82/logo-eharmony.png?w=60'/>   
+                     <p>Why Marriagebook?</p>
                     </div >
                     <h4 className='p-3' style={{color:'white', fontFamily:"Lato,sans-serif",fontWeight:'600'}}><span style={{marginRight:'10px',color:'#ffcb4a'}}>
                         #1 TRUSTED 
@@ -130,6 +132,9 @@ const Home2 = () => {
                          </h4>
                     <p className='p-3' style={{color:'white',textAlign:'center',lineHeight:'1.5',fontSize:'12px'}}>
                     2020 Survey of 1,067 Respondents from the US, UK, Canada and Australia
+                    <p>Done with Dating?
+
+Find your forever person now</p>
                     </p>
                 </div>
                 <div style={{backgroundColor:"#617DC6", flex:'0.3333', display:'flex',flexDirection:'column', alignItems:'center', justifyContent:'space-around'}}>
@@ -138,7 +143,7 @@ const Home2 = () => {
                     </div>
                 <h4 className='p-3' style={{color:'white',fontFamily:"Lato,sans-serif",fontWeight:'600',textAlign:'center'}}>EVERY <span style={{marginRight:'10px',color:'#ffcb4a'}}>14 MINUTES</span>SOMEONE FINDS LOVE ON MARRIAGEBOOK</h4>
                     <p className='p-3' style={{color:'white',textAlign:'center',textAlign:"center",lineHeight:'1.5',fontSize:'12px'}}>
-                    marriagebook user data
+                    <p>Marriage-minded professionals</p>
                     </p>
                 </div>
                 <div style={{backgroundColor:"#1a5f78", flex:'0.3333', display:'flex',flexDirection:'column', alignItems:'center', justifyContent:'space-around'}}>
@@ -156,6 +161,7 @@ const Home2 = () => {
         <div className='p-5'>
             <h3 className='pb-5' style={{textAlign:'center',fontFamily:"Lato",fontWeight:'500'}}>
                 Our dating site helps millions find real love
+                <p>Marriagebook helps people globally to find their one</p>
             </h3>
             <div className='d-flex justify-content-around'>
                 <div className='p-3' style={{flex:'0.15',display:'flex',flexDirection:'column',justifyContent:"center",alignItems:'center',alignContent:'center'}}>
@@ -166,6 +172,7 @@ const Home2 = () => {
                         </b>
                     </p>
                     <p>… could you be next?</p>
+                    <p>Trust Marriagebook to make the right match</p>
                 </div>
                 <div className='p-3' style={{flex:'0.15',display:'flex',flexDirection:'column',justifyContent:"center",alignItems:'center',alignContent:'center'}}>
                     <img src='/assets/images/02-female-male.webp' style={{width:'130px', height:'auto'}} />
@@ -179,6 +186,7 @@ const Home2 = () => {
                 </div>
                 <div className='p-3' style={{flex:'0.15',display:'flex',flexDirection:'column',justifyContent:"center",alignItems:'center',alignContent:'center'}}>
                     <img src='/assets/images/03-success-rate.webp' style={{width:'130px', height:'auto'}} />
+                    <form></form>
                     <p style={{textAlign:'center'}}>
                         <b>
                         SITE MOST LIKELY TO LEAD TO HAPPY RELATIONSHIPS
@@ -198,10 +206,12 @@ const Home2 = () => {
             </div>
         </div>
 
+
         <div style={{backgroundColor:'#F2F2F2'}}>
             <div className='p-5' style={{padding: '52px 100px 52px 100px', paddingRight:'40px'}}>
                 <h3 style={{textAlign:'center',fontFamily:"Lato"}} className='mb-4'>
                     Introducing: A new eharmony experience
+                    <p>A new Marriagebook experience</p>
                 </h3>
                 <p className='mb-4' style={{textAlign:'center',color:'#4c4c4c'}}>Your search for a great relationship has never been easier with groundbreaking overhaul of the eharmony you know and trust.</p>
                 <p style={{textAlign:'center',color:'#4c4c4c'}} className='mb-4'>GET A SNEAK PEEK</p>
@@ -218,7 +228,7 @@ const Home2 = () => {
                         <img src='/assets/images/97.jpg'/>
                     </div>
                     <div style={{flex:"0.25"}}>
-                        <p className='mb-4'>What happens when you apply scientific research to dating behavior? A whole lotta love! But this isn’t destiny, it’s deliberate. That’s why every 14 minutes, someone finds love on eharmony.</p>
+                        <p className='mb-4'>What happens when you apply scientific research to dating behavior? A whole lotta love! But this isn’t destiny, it’s deliberate. That’s why  minutes, someone finds love on eharmony.</p>
                         <button className='btn' style={{backgroundColor:'#ef6054', color:'white'}}>
                             JOIN NOW
                         </button>
@@ -231,6 +241,7 @@ const Home2 = () => {
             <div className='p-5' style={{padding: '52px 100px 52px 100px', paddingRight:'40px'}}>
                 <h3 style={{textAlign:'center',fontFamily:"Lato"}} className='mb-4'>
                 Quality Singles, Just Like You
+                <p>Marriage-minded professionals like you</p>
                 </h3>
                 <div className='d-flex flex-wrap align-items-center justify-content-around'>
                     <div style={{flex:"0.25"}}>
@@ -286,6 +297,7 @@ const Home2 = () => {
             <div className='p-5' style={{padding: '52px 100px 52px 100px', paddingRight:'40px'}}>
                 <h3 style={{textAlign:'center',fontFamily:"Lato"}} className='mb-4'>
                 The #1 Trusted Dating App
+                <p>The app most trusted for marriage-minded professionals</p>
                 </h3>
                 <div className='d-flex align-items-center justify-content-around'>
                     <div style={{flex:"0.25"}}>
@@ -426,7 +438,7 @@ const Home2 = () => {
     textTransform: 'uppercase'}}>FOLLOW US ON</div>
           <ul>
           <li style={{display:'inline',margin:"auto 20px"}}>
-           <a style={{ color:'white',fontWeight:'600',height:'30px',width:'30px'}}><img src='https://assets.stickpng.com/images/60fea6c83d624000048712b7.png'/></a>
+           <a style={{ color:'white',fontWeight:'600',height:'30px',width:'30px'}}><section style={{backgroundImage:"url('/assets/images/logo-2.png')", color:'white', paddingBottom:'140px', backgroundRepeat:'no-repeat'}}></section></a>
           </li>  
           <li style={{display:'inline'}}>
            <a style={{fontWeight:'600'}}><img style={{width:'25px',height:'20px'}} src='https://logodix.com/logo/395128.png'/></a>

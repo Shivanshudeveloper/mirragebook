@@ -29,7 +29,7 @@ const Home = () => {
                         <div className="col-lg-12">
                             <nav className="navbar navbar-expand-lg">
                                 <a className="navbar-brand" style={{color:'red'}} href="#">
-                                    <img src="assets/images/logo-2.png" alt="Logo"/>
+                                    <img src="assets/images/logo-2.jpg" alt="Logo"/>
                                     {/* COMPANY LOGO */}
                                 </a>
                                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +71,7 @@ const Home = () => {
             </div> 
 
             <div className="header-banner d-flex align-items-center my-5">
-                {/* <div className="container">
+                <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-xl-10 col-lg-9 col-sm-10">
                             <div className="banner-content">
@@ -128,7 +128,7 @@ const Home = () => {
                             </div> 
                         </div>
                     </div>
-                </div>  */}
+                </div> 
 
                 <div className="d-flex flex-column py-20 container foreground min-vh-100">
                     <div className="row align-items-center justify-content-center justify-content-lg-between my-auto">
