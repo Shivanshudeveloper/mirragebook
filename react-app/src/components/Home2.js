@@ -17,7 +17,7 @@ const Home2 = () => {
     }
     return (
     <>
-        <section style={{backgroundImage:"url('/assets/images/pexels-j-carter-254069.jpg')", color:'white', paddingBottom:'140px'}}>
+        <section style={{backgroundImage:"url('/assets/images/pexels-j-carter-254069.jpg')", color:'white',width:"100%",height:"450px",objectFit:"cover",backgroundSize:"cover", paddingBottom:'140px',backgroundRepeat:'no-repeat',objectFit:"cover"}}>
             {/* <div className='image-container'>
                 <img src='/assets/images/bg-img-1.jpg'/>
             </div>
@@ -25,13 +25,13 @@ const Home2 = () => {
                 <img src='/assets/images/bg-img-2.jpg' style={{display:'none'}}/>
             </div> */}
             <div>
-                <nav className={`d-flex justify-content-between ${stickyClass} h-4 align-items-center`} style={{color:"white",margin:'auto 100px'}}>
+                <nav className={`d-flex justify-content-between ${stickyClass} h-4 align-items-center`} style={{color:"white",margin:'auto 100px',position:"absolute",zIndex:'99'}}>
                     <ul className='p-2'>
                         <li className='p-1'>
-                            <a style={{color:"white", fontSize:"30px",fontWeight:'400'}} href='/'>
+                            <a style={{color:"black", fontSize:"50px",fontWeight:'400', zIndex:'99'}} href='/'>
                               
                                  {/* <img src='https://images.ctfassets.net/czwjnyf8a9ri/6vbYI3pLTa19TKvECeYUmd/bba9ee9e94e5de7d45317946c6bd5c82/logo-eharmony.png?w=60' alt='Marriagebook' />  */}
-                                 <section style={{backgroundImage:"url('/assets/images/logo-2.png')", color:'white', paddingBottom:'140px', backgroundRepeat:'no-repeat'}}></section>
+                                 <section style={{backgroundImage:"url('/assets/images/logo-2.png')", color:'black', paddingBottom:'160px', backgroundRepeat:'no-repeat',backgroundSize:'absolute',zIndex:'999',backfaceVisibility:"visible"}}></section>
                             marriagebook
                             </a>
                         </li>
@@ -39,17 +39,17 @@ const Home2 = () => {
                     <ul className='d-flex p-2 m-2' style={{letterSpacing:'1.4px',
     lineHeight:'1',fontSize:'11px',fontWeight:"700"}}>
                         <li className='p-2 m-2'>
-                            <a style={{color:"white", fontFamily:"Lato"}} href='/'>
+                            <a style={{color:"black", fontFamily:"Lato"}} href='/'>
                                 TOUR
                             </a>
                         </li>
                         <li className='p-2 m-2'>
-                            <a style={{color:"white",fontWeight:'600',fontFamily:'Lato'}} href='/'>
+                            <a style={{color:"black",fontWeight:'600',fontFamily:'Lato'}} href='/'>
                             DATING  ADVICE
                             </a>
                         </li>
                         <li className='m-2'>
-                            <a className='p-2' style={{color:"white", border:'2px solid white',fontWeight:'600',fontFamily:'Lato'}} href='/'>
+                            <a className='p-2' style={{color:"black", border:'2px solid white',fontWeight:'600',fontFamily:'Lato'}} href='/'>
                                 LOGIN
                             </a>
                         </li>
@@ -57,12 +57,12 @@ const Home2 = () => {
                 </nav>
             </div>
 
-            <div style={{color:'white'}} className="pb-5">
+            <div style={{color:'black'}} className="pb-5">
                 <form style={{maxWidth:"480px", color:'white'}}>
-                    <h2 style={{color:'white', textAlign:'center',fontFamily:'Lato', fontSize:'28px',letterSpacing:'1.4px', fontWeight:"600",textDecoration:'underline',textDecorationThickness: '1px'}}>START <em style={{color:'#ffcb4a',fontFamily:'arial'}}>free </em>TODAY</h2>
+                    <h2 style={{color:'black', textAlign:'center',fontFamily:'Lato', fontSize:'28px',letterSpacing:'1.4px', fontWeight:"600",textDecoration:'underline',textDecorationThickness: '1px'}}>START <em style={{color:'#ffcb4a',fontFamily:'arial'}}>free </em>TODAY</h2>
                     <div className='form d-flex p-2 m-2 justify-content-around'>
                         <div className='iAm' style={{}}>
-                            <h4 style={{color:'white'}}>I am</h4>
+                            <h4 style={{color:'black'}}>I am</h4>
                             <div className='mt-2 d-flex' style={{color:'black', backgroundColor:'white', alignItems:"center", borderRadius:'8px', minWidth:'160px'}}>
                                 <Radio
                                     // {...controlProps('e')}
@@ -89,7 +89,7 @@ const Home2 = () => {
                         </div>
                         
                         <div className='lookingFor'>
-                            <h4 style={{color:'white'}}>Looking For</h4>
+                            <h4 style={{color:'black'}}>Looking For</h4>
                             <div className='mt-2 d-flex' style={{color:'black', backgroundColor:'white', alignItems:"center", borderRadius:'8px', minWidth:'160px'}}>
                                 <Radio
                                     // {...controlProps('e')}
@@ -109,7 +109,7 @@ const Home2 = () => {
                         </div>
                     </div>
                     <div className='d-flex justify-content-center'>
-                        <button className='btn btn-lg' style={{color:"white",fontFamily:"Lato",fontWeight:"600",fontSize:'15px',backgroundImage:'linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%)', minWidth:'280px'}}>
+                        <button className='btn btn-lg' style={{color:"black",fontFamily:"Lato",fontWeight:"600",fontSize:'15px',backgroundImage:'linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%)', minWidth:'280px'}}>
                             JOIN NOW
                         </button>
                     </div>
@@ -438,7 +438,7 @@ Find your forever person now</p>
     textTransform: 'uppercase'}}>FOLLOW US ON</div>
           <ul>
           <li style={{display:'inline',margin:"auto 20px"}}>
-           <a style={{ color:'white',fontWeight:'600',height:'30px',width:'30px'}}><section style={{backgroundImage:"url('/assets/images/logo-2.png')", color:'white', paddingBottom:'140px', backgroundRepeat:'no-repeat'}}></section></a>
+           <a style={{ color:'white',fontWeight:'600',height:'30px',width:'30px'}}><section style={{backgroundImage:"url('/assets/images/logo-2.png')", color:'white', paddingBottom:'140px', backgroundRepeat:'no-repeat',backgroundSize:"contain"}}></section></a>
           </li>  
           <li style={{display:'inline'}}>
            <a style={{fontWeight:'600'}}><img style={{width:'25px',height:'20px'}} src='https://logodix.com/logo/395128.png'/></a>
