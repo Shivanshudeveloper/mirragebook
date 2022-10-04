@@ -73,7 +73,7 @@ export default function ProfileCard() {
 
       <CardActions>
 
-        <Button variant='contained' fullWidth size="large">
+        <Button href="/userprofile" variant='contained' fullWidth size="large">
             View More
         </Button>
         

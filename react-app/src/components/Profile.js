@@ -14,6 +14,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
+import TextField from '@mui/material/TextField';
 
 import ProfileCard from './ProfileCard';
 
@@ -49,6 +50,12 @@ export default function Profile() {
       </AppBar>
       <main>
         <Container sx={{ py: 8 }} maxWidth="lg">
+          <TextField 
+            sx={{ float: 'right', width: '300px' }}
+            placeholder='Search'
+            label="Search"
+            size='large'
+          />
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
