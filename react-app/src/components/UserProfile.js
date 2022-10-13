@@ -20,13 +20,124 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import Container from '@mui/material/Container';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import Dialog from '@mui/material/Dialog';
+import Slide from '@mui/material/Slide';
+import CloseIcon from '@mui/icons-material/Close';
+import IconButton from '@mui/material/IconButton';
+import TextField from '@mui/material/TextField';
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle';
+
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+});
 
 const theme = createTheme();
 
 const UserProfile = () => {
+    const [open, setOpen] = React.useState(false);
+
+    const [chat, setchat] = React.useState(false);
+
+    const [userchats, setuserchats] = React.useState([]);
+    const [userchatstext, setuserchatstext] = React.useState("");
+
+
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+    const addUserChat = () => {
+        setuserchats([userchatstext, ...userchats]);
+        setuserchatstext("");
+    }
+
+
     return (
         <>
+            <Dialog
+                fullScreen
+                open={open}
+                onClose={handleClose}
+                TransitionComponent={Transition}
+            >
+                <AppBar sx={{ position: 'relative' }}>
+                <Toolbar>
+                    <IconButton
+                    edge="start"
+                    color="inherit"
+                    onClick={handleClose}
+                    aria-label="close"
+                    >
+                    <CloseIcon />
+                    </IconButton>
+                    <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
+                        Chat
+                    </Typography>
+                </Toolbar>
+                </AppBar>
+                {
+                    userchats?.map((chats) => {
+                        return (
+                            <Stack
+                                direction='row'
+                                spacing={2}
+                                sx={{
+                                    p: 4
+                                }}
+                            >
+                                <Avatar sx={{ width: 50, height: 50 }} alt="Remy Sharp" src="https://swall.teahub.io/photos/small/5-56214_1920x1080-wallpaper-s-collection-beautiful-girl-wallpaper-girl.jpg" />
+                            
+                                <Alert sx={{ width: '100%' }} severity="info">
+                                    <AlertTitle>Test User</AlertTitle>
+                                        {chats}
+                                </Alert>
+                            </Stack>
+                        )
+                    })
+                }
+
+                <Stack
+                    direction='row'
+                    spacing={2}
+                    sx={{ 
+                        position: 'absolute',
+                        bottom: 0,
+                        p: 4,
+                    }} 
+                >
+                    <TextField
+                        placeholder="Chat Here"
+                        fullWidth
+                        value={userchatstext}
+                        onChange={(e) => setuserchatstext(e.target.value)}
+                        size='large'
+                        sx={{ 
+                            width: '1200px'
+                        }}
+                    />
+                    <Button
+                        size='large'
+                        variant='contained'
+                        sx={{ 
+                            width: '400px'
+                        }}
+                        onClick={addUserChat}
+                    >
+                        Send Message
+                    </Button>
+                </Stack>
+                
+                
+            </Dialog>
+
+
             <ThemeProvider theme={theme}>
                 <CssBaseline />
                 <AppBar position="relative">
@@ -56,8 +167,9 @@ const UserProfile = () => {
                     <Button
                         sx={{ float: 'right' }}
                         variant='contained'
+                        onClick={handleClickOpen}
                     >
-                        Contact
+                        Chat with them
                     </Button>
                     <br />
 
