@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "signup_users",
+  "info": {
+    "name": "signup_user",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "Gender": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "date"
+    },
+    "state": {
+      "type": "string"
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "age": {
+      "type": "string"
+    },
+    "profile_url": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plans",
+  "info": {
+    "name": "Plans",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Plans": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Price": {
+      "type": "string"
+    }
+  }
+}

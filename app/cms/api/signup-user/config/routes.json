@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/signup-users",
+      "handler": "signup-user.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/signup-users/count",
+      "handler": "signup-user.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/signup-users/:id",
+      "handler": "signup-user.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/signup-users",
+      "handler": "signup-user.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/signup-users/:id",
+      "handler": "signup-user.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/signup-users/:id",
+      "handler": "signup-user.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
